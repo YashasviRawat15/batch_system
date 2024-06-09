@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LandingPage.css';
 import img_1 from "./images/iPhone_img1.png";
 import img_2 from "./images/iPhone_img2.png";
 import img3 from "./images/img3.png";
 import star from "./images/star.png"
 import rings from "./images/rings.png"
-import gr1 from "./images/gr1.png"
 import gr2 from "./images/gr2.png"
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faFire, faArrowRight, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { faFire, faArrowRight, faCirclePlay,  faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const LandingPage = () => {
+
+
+
   return (
     <div className="landing-page">
       <nav className="navbar">
       <img src={star} className='star1' alt="star" />
         <div className="logo"> <FontAwesomeIcon icon={faFire} style={{color: "#ff5555",}} /> uifry</div>
+
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -23,6 +26,14 @@ const LandingPage = () => {
           <li><a href="#features">Features</a></li>
         </ul>
         <button className="cta-button download">Download</button>
+        
+        
+                    
+                    
+                
+                
+                
+                    
         <img src={star} className='star2' alt="star" />
       </nav>
       <section id="hero" className="hero">
